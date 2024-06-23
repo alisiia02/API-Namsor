@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text-section {
+    max-width: 50%;
+}
+
+.form-section {
+    max-width: 40%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer .footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.detailed-results p {
+    padding-top: 1rem;
+}

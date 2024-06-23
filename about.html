@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About You</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body class="bg-pink-100 flex flex-col items-center h-screen">
+    <header class="w-full bg-blue-900 text-white py-4">
+        <div class="container mx-auto flex justify-between">
+            <h1 class="text-lg font-bold">Name Checker</h1>
+            <nav class="space-x-4">
+                <a href="index.html" class="hover:text-blue-300">Home</a>
+                <a href="#" class="hover:text-blue-300">About</a>
+                <a href="#" class="hover:text-blue-300">Features</a>
+                <a href="#" class="hover:text-blue-300">Contacts</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex flex-col items-center mt-16">
+        <h1 class="text-4xl font-bold text-blue-900 mb-4 text-center">About You</h1>
+        <h2 class="text-2xl font-bold text-blue-700 mb-4 text-center">Region & Country</h2>        
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl">
+            <article class="bg-blue-900 text-white p-4 rounded">
+                <h3 class="text-xl font-bold mb-2">Country of origin</h3>
+                <p id="country-origin">Loading...</p>
+            </article>
+            <article class="bg-blue-900 text-white p-4 rounded">
+                <h3 class="text-xl font-bold mb-2">Alternative country</h3>
+                <p id="country-origin-alt">Loading...</p>
+            </article>
+            <article class="bg-blue-900 text-white p-4 rounded">
+                <h3 class="text-xl font-bold mb-2">Region</h3>
+                <p id="region-origin">Loading...</p>
+            </article>
+            <article class="bg-blue-900 text-white p-4 rounded">
+                <h3 class="text-xl font-bold mb-2">Sub Region</h3>
+                <p id="subregion-origin">Loading...</p>
+            </article>
+        </section>
+
+        <section class="mt-8 text-left detailed-results">
+            <h2 class="text-2xl font-bold text-blue-700 mb-4">Detailed results</h2>
+            <p class="text-lg text-gray-700">
+                <b>Provided values:</b>
+            </p>
+            <p class="text-lg text-gray-700">
+                First name: <span id="first-name"></span>;
+            </p>
+            <p class="text-lg text-gray-700">
+                Last name: <span id="last-name"></span>;
+            </p>
+            <p class="text-lg text-gray-700">
+                Script: <span id="script"></span>.
+            </p>
+            <p class="text-lg text-gray-700">
+                Region:
+            </p>
+            <ul class="list-disc list-inside" id="region-list"></ul>
+            <p class="text-lg text-gray-700">
+                Country:
+            </p>
+            <ul class="list-disc list-inside" id="country-list"></ul>
+            <p class="text-lg text-gray-700">
+                Probability:
+            </p>
+            <ul class="list-disc list-inside" id="probability-list"></ul>
+        </section>
+        <br>
+    </main>
+
+    <footer class="w-full bg-blue-900 text-white py-8 mt-auto">
+        <div class="container mx-auto footer">
+            <section class="footer-section">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </section>
+            <section class="footer-section">
+                <h3 class="font-bold mb-2">Features</h3>
+                <ul>
+                    <li>Overview</li>
+                    <li>Solutions</li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h3 class="font-bold mb-2">Social</h3>
+                <ul>
+                    <li>Twitter</li>
+                    <li>LinkedIn</li>
+                    <li>GitHub</li>
+                    <li>Dribbble</li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h3 class="font-bold mb-2">Legal</h3>
+                <ul>
+                    <li>Terms</li>
+                    <li>Privacy</li>
+                    <li>Cookies</li>
+                    <li>Contact</li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assets/js/api.js"></script>
+</body>
+</html>
